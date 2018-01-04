@@ -13,6 +13,7 @@ Basic Features
 * Pushbutton for Reset (press <1 second) and starting the bootloader (press >3 seconds).
 * Onboard LDO regulator (standard SOT-23-5) can be used for VDD and VDDA, just VDD or bypassed completely.
 * USB VBUS (5V) is available on a pin and can be routed to the onboard LDO
+* Dedicated USB disconnect function with proper pullup & disable (conforming to USB spec, not some dirty trickery)
 * Use of a crystal (SMT 3.2x2.5mm) is optional.
 * Options can be configured using solder bridges.
 * Power LED and User LED (on PC13, PB13 or disconnected).
@@ -32,7 +33,7 @@ These pins are available on the 2.54mm headers:
 * NRST
 * GND (2 times), also used on Vssa
 
-These pins are available on the Micro-MaTch:
+These pins are also available on the Micro-MaTch:
 
 * SWCLK, SWDIO, SWO
 * NRST
@@ -46,8 +47,17 @@ These pins are not individually broken out:
 * PD0, PD1 (only connected to the onboard crystal pads)
 * Boot0 (only connected to the reset / bootloader button)
 
+Comparison to the popular "Blue Pill" boards
+---------------------------------------------
 
-Some of the supported microcontrollers 
+* Allows to select the STM32 model you want, even the F4 models
+* Allows to select the optimal power configuration via solder bridges
+* Gives access the bootloader via button press
+* USB disconnect allows using USB based bootloaders without hassle
+* Proper ESD protection for USB, ferrite beads in the power traces
+* Conveniant development with SWD, SWO, NRST, UART on one Micro-MaTch connector
+
+Some of the supported microcontrollers
 ------------------------------------
 
 * STM32F070CB
@@ -60,7 +70,8 @@ Some of the supported microcontrollers
 * STM32F334C6, STM32F334C8
 * STM32F401CB, STM32F401CC, STM32F401CD, STM32F401CE
 * STM32F411CC, STM32F411CE
-* STM32F412CG
+* STM32F412CE, STM32F412CG
+* STM32F413CG, STM32F413CH, STM32F423CH
 * STM32L151C6-A, STM32L151C8-A, STM32L151CB-A
 * STM32L152C6-A, STM32L152C8-A, STM32L152CB-A
 
