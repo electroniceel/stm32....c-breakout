@@ -1,0 +1,15 @@
+(module MS1V-T1K (layer F.Cu) (tedit 571E7F2D)
+  (descr "Micro Crystal MS1V-T1K Tuning Fork Crystal 30kHz-200kHz (SMD)")
+  (tags CRYSTAL)
+  (fp_text reference X2 (at 1.65 4.3) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.2)))
+  )
+  (fp_text value 32kHz (at 1.65 -4) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.2)))
+  )
+  (fp_line (start -2.6 1.75) (end 4 1.75) (layer F.SilkS) (width 0.3))
+  (fp_line (start -2.5 -1.75) (end 4 -1.75) (layer F.SilkS) (width 0.3))
+  (pad 3 smd rect (at -1.4 0) (size 2.8 3) (layers F.Cu F.Paste F.Mask))
+  (pad 2 smd rect (at 5.2 -1.3) (size 2 1) (layers F.Cu F.Paste F.Mask))
+  (pad 1 smd rect (at 5.2 1.3) (size 2 1) (layers F.Cu F.Paste F.Mask))
+)
