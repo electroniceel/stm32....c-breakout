@@ -79,6 +79,18 @@ Some of the supported microcontrollers
 These are just the ones that I checked for compatibility. Since ST regards pinout compatibility higly,
 nearly all STM32 controllers in LQFP48 and UFQFPN48 packages should work on this board.
 
+Schematics & Layout
+-------------------
+
+Schematics & Layout were done in KiCAD.
+
+[Schematics as PDF](https://github.com/electroniceel/stm32....c-breakout/raw/master/schematics.pdf)
+
+Picture
+-------
+
+![Module and raw PCB](https://github.com/electroniceel/stm32....c-breakout/raw/master/pictures/board%2Bsample.jpg)
+
 License
 -------
 ![CC-BY](https://licensebuttons.net/l/by/4.0/88x31.png)
