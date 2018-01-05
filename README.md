@@ -8,7 +8,7 @@ Basic Features
 
 * Focus on small footprint and direct access to most pins.
 * 40 pins broken out, organized as two single row headers in 2.54mm pitch 
-* Footprints for USB-A or Micro-USB Header
+* Footprints for USB-B (THT) or Micro-USB (SMT) Header
 * Provides a 8 pin Micro-MaTch header for easy access to SWD and UART.
 * Pushbutton for Reset (press <1 second) and starting the bootloader (press >3 seconds).
 * Onboard LDO regulator (standard SOT-23-5) can be used for VDD and VDDA, just VDD or bypassed completely.
