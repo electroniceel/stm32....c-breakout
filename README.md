@@ -17,6 +17,7 @@ Basic Features
 * Use of a crystal (SMT 3.2x2.5mm) is optional.
 * Options can be configured using solder bridges.
 * Power LED and User LED (on PC13, PB13 or disconnected).
+* Size: 25x51mm or 20x10 pins in the standard 2.54mm raster
 
 Available pins
 --------------
@@ -52,10 +53,16 @@ Comparison to the popular "Blue Pill" boards
 
 * Allows to select the STM32 model you want, even the F4 models
 * Allows to select the optimal power configuration via solder bridges
-* Gives access the bootloader via button press
-* USB disconnect allows using USB based bootloaders without hassle
-* Proper ESD protection for USB, ferrite beads in the power traces
+* Gives access to the bootloader via button press
+* USB disconnect function allows using USB based bootloaders without hassle
+* Better engineered
+    * Proper ESD protection for USB
+    * Ferrite beads in the power traces
+    * Pads for proper decoupling caps
 * Conveniant development with SWD, SWO, NRST, UART on one Micro-MaTch connector
+* Possible to use THT USB-B sockets which are mechanically more stable
+
+Downside is that it is larger, Blue Pill uses 20x7 pins raster.
 
 Some of the supported microcontrollers
 ------------------------------------
